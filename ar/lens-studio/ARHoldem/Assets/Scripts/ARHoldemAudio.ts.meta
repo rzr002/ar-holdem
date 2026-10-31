@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/e9122b79-9cf3-4a97-b27f-ebf676aa4f77>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 091c6b24-f1ea-42de-8376-7acd06eb92d9
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 091c6b24-f1ea-42de-8376-7acd06eb92d9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> a6ff31bb-7436-4145-a92c-1dee0c0b276e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a6ff31bb-7436-4145-a92c-1dee0c0b276e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: b843d6e1-db29-44e9-98e6-f208672a6ee7
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    effectsVolume: false
+    musicVolume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - musicVolume: 0.070000
+      effectsVolume: 0.250000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float musicVolume = 0.07 {"hint":"Background music volume; set to 0 to mute", "widget":"slider", "min":0, "max":1, "step":0.01}'
+    - '// @input float effectsVolume = 0.25 {"hint":"Button and turn sound volume; set to 0 to mute", "widget":"slider", "min":0, "max":1, "step":0.01}'

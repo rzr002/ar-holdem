@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-10-28T20:39:34.732196+08:00",
+  "scope": "Infrastructure only; poker feature work remains paused",
+  "project": "<REPO_ROOT>",
+  "template": {
+    "source": "https://github.com/specs-devs/samples",
+    "commit": "110a145b6572a17fa94d86f18b76047278014729",
+    "path": "Specs Base Template",
+    "assets_verified": {
+      "Packages/SpectaclesInteractionKit.lspkg": {
+        "bytes": 1928576,
+        "sha256": "e1743d29521879bda6c20ceb8a22fc87ec2b1f6aa316ff94bf6ca32361ee0dcd"
+      },
+      "Packages/SpectaclesUIKit.lspkg": {
+        "bytes": 1248299,
+        "sha256": "fe353d5c5c8591f482175080d890a666b7789f77edc876132fd132d2b96e78c2"
+      },
+      "Assets/Render/Echopark.hdr": {
+        "bytes": 1495252,
+        "sha256": "7f718a37e096b94af7cd15a6c6142e7ec0386887b756b9cdced63f1fc71b38d4"
+      }
+    },
+    "opened_in_lens_studio": true,
+    "upgraded_to": "5.23.2.26081320",
+    "original_backup": "BackUp (created by Lens Studio)"
+  },
+  "installed": {
+    "node": "24.10.0",
+    "npm": "11.6.0",
+    "codex_cli": "0.161.0",
+    "git_lfs": "3.8.0",
+    "codex_plugin": "ls-clad@ls-extensions",
+    "project_skill": "plan-lens",
+    "lens_studio": {
+      "version": "5.23.2.26081320",
+      "path": "<LOCAL_LENS_STUDIO_INSTALL_PATH>",
+      "architecture": "arm64",
+      "signature": "Snap, Inc. (424M5254LK)",
+      "gatekeeper": "accepted; Notarized Developer ID",
+      "dmg_verified": true
+    },
+    "project_mcp_config": {
+      "files": [
+        ".mcp.json",
+        ".codex/config.toml"
+      ],
+      "credentials": "local, mode 0600, Git ignored",
+      "cli_project_trust": "not configured globally; first project CLI launch may require trust confirmation"
+    },
+    "editor_plugins": {
+      "Core Chat Tools": "installed in official Asset Library",
+      "Agents-Docs": "downloaded, loaded; generated project agent docs"
+    }
+  },
+  "pending": {},
+  "license_confirmation": {
+    "confirmed_by_user": true,
+    "date": "2026-10-28",
+    "version": "5.23.2",
+    "platform": "MAC_OS_ARM"
+  },
+  "verified": {
+    "preview": {
+      "status": "passed",
+      "environment": "Sunlit Room",
+      "simulation": "SPECS 27",
+      "basis": "Observed native Lens Studio preview and loaded scene with interaction kit"
+    },
+    "mcp_server": {
+      "status": "connected",
+      "scope": "localhost",
+      "authentication_required": true,
+      "authenticated_call": "passed: ListAllPanels and ExecuteEditorCode (read-only)",
+      "authenticated_handshake": "passed",
+      "protocol_version": "2025-11-25",
+      "server": "Lens Studio MCP Server 1.0.0",
+      "tools_count": 38,
+      "active_project_matches": true
+    },
+    "lens_studio_sign_in": {
+      "is_authorized": true,
+      "verified_by": "Read-only ExecuteEditorCode after user completed login",
+      "required_for_local_scope": false,
+      "checked_at": "2026-10-28T12:38:52.294Z"
+    },
+    "local_no_login": {
+      "status": "passed",
+      "is_authorized": false,
+      "tools_count": 38,
+      "compilation": "succeeded",
+      "runtime_status": "success",
+      "runtime_error_count": 0,
+      "preview_image": "ar/verification/preview-without-snapchat-login.png",
+      "report": "ar/verification/local-no-login-check.json"
+    }
+  },
+  "network": {
+    "lens_studio_proxy": "http://127.0.0.1:7897",
+    "scope": "process only; explicitly authorized by user",
+    "localhost_proxy_bypass": true,
+    "asset_library": "restored"
+  },
+  "mode": "Local prototype development; user has voluntarily signed into Lens Studio. Snap platform publishing is outside competition requirements.",
+  "infrastructure_status": "ready",
+  "sanitized_paths": true
+}

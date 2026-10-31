@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-28",
+  "target": "Lens Studio 5.23.2 SPECS desktop preview",
+  "bridge_mode": "strategic (explicit offline tests)",
+  "results": [
+    {
+      "scenarioId": "ar-holdem-spatial",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-action",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-offline-hand",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-guards",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-ik-reach",
+      "status": "succeeded",
+      "target": "preview"
+    }
+  ]
+}

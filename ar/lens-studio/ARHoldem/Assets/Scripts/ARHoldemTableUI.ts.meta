@@ -1,0 +1,97 @@
+- !<AssetImportMetadata/af2c37d1-a632-4244-991c-6a1bc2d87768>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6a136426-de86-4091-9b1f-2dde31d1ec4f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6a136426-de86-4091-9b1f-2dde31d1ec4f
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 00c51cbe-536f-4145-aa84-21ef8f915b8c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/00c51cbe-536f-4145-aa84-21ef8f915b8c>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 95e4b12b-1f54-4812-bcfa-a9fe6a113938
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    accentColor: false
+    atlasAnchor: false
+    boardAnchor: false
+    cardMaterial: false
+    cardWidth: false
+    controlsAnchor: false
+    controlsWidth: false
+    handAnchor: false
+    lyraAnchor: false
+    novaAnchor: false
+    orionAnchor: false
+    statusAnchor: false
+    textColor: false
+    textScale: false
+    vegaAnchor: false
+    warmColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - boardAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      handAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      atlasAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      novaAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      orionAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      lyraAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      vegaAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      statusAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      controlsAnchor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      textColor: !<Vec4> {x: 0.950000, y: 0.970000, z: 1.000000, w: 1.000000}
+      accentColor: !<Vec4> {x: 0.530000, y: 1.000000, z: 0.820000, w: 1.000000}
+      warmColor: !<Vec4> {x: 1.000000, y: 0.480000, z: 0.420000, w: 1.000000}
+      textScale: 1.100000
+      cardWidth: 6.200000
+      controlsWidth: !<float> 46.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @ui {\"widget\":\"label\", \"label\":\"AR Hold'em — spatial cards and controls\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Authored anchors"}'
+    - '// @input SceneObject boardAnchor {"hint":"Community-card row on the table"}'
+    - '// @input SceneObject handAnchor {"hint":"Human private-card row near the player"}'
+    - '// @input SceneObject atlasAnchor {"hint":"Seat 1: left-near opponent"}'
+    - '// @input SceneObject novaAnchor {"hint":"Seat 2: left-far opponent"}'
+    - '// @input SceneObject orionAnchor {"hint":"Seat 3: center-far opponent"}'
+    - '// @input SceneObject lyraAnchor {"hint":"Seat 4: right-far opponent"}'
+    - '// @input SceneObject vegaAnchor {"hint":"Seat 5: right-near opponent"}'
+    - '// @input SceneObject statusAnchor {"hint":"Status and pot above the table"}'
+    - '// @input SceneObject controlsAnchor {"hint":"Human action buttons near the table edge"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Appearance"}'
+    - '// @input Asset.Material cardMaterial {"hint":"Opaque Unlit clone template for physical card faces and vector suits"}'
+    - '// @input vec4 textColor = {0.95,0.97,1,1} {"hint":"Light text on the additive display", "widget":"color"}'
+    - '// @input vec4 accentColor = {0.53,1,0.82,1} {"hint":"Current-turn and pot accent", "widget":"color"}'
+    - '// @input vec4 warmColor = {1,0.48,0.42,1} {"hint":"Hearts, diamonds and errors", "widget":"color"}'
+    - '// @input float textScale = 1.1 {"hint":"Typography multiplier; keep labels within their cells", "widget":"slider", "min":0.8, "max":1.5, "step":0.05}'
+    - '// @input float cardWidth = 6.2 {"hint":"Community card width, centimeters", "widget":"slider", "min":5, "max":8, "step":0.25}'
+    - '// @input float controlsWidth = 46 {"hint":"Action dock width, centimeters", "widget":"slider", "min":40, "max":58, "step":1}'
+    - '// @ui {"widget":"group_end"}'

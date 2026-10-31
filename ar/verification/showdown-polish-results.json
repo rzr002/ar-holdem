@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-29",
+  "repository": "ar-holdem",
+  "scope": "Showdown settlement UI and desktop simulated SIK gestures",
+  "default_provider": "lucas",
+  "features": {
+    "card_privacy": "During play only human hole cards are exposed to the human client. Completed showdown reveals only dealt-in, non-folded participants. Uncontested settlement reveals no hole cards. Next hand clears reveals and winner labels.",
+    "winner_semantics": "Union of actual main-pot and side-pot award recipients; supports split pots and winners with zero or negative whole-hand net. Refund-only recipients are not winners.",
+    "display": "Gold WINNER / SPLIT WINNER labels, English hand categories for showdown participants, main-pot winner and decisive ranks or kickers, compact side-pot winner summary.",
+    "payload_validation": "Rejects premature or folded-player reveals, invalid or duplicate cards, invalid settlement structures and inconsistent awards; legacy payloads without settlement retain a private fallback."
+  },
+  "backend_suite": {
+    "tests": 143,
+    "seconds": 20.166,
+    "result": "OK",
+    "source_artifact": "ar-holdem-polish-tests.txt"
+  },
+  "native_typescript": {
+    "status": "succeeded",
+    "source_artifact": "ar-holdem-polish-final-compile.json"
+  },
+  "native_runtime": {
+    "status": "success",
+    "mode": "refresh",
+    "errors": [],
+    "errors_capped": false,
+    "truncated": false,
+    "source_artifact": "ar-holdem-polish-final-runtime.json"
+  },
+  "native_scenarios": [
+    {
+      "scenarioId": "ar-holdem-action",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "legal human action",
+      "source_artifact": "ar-holdem-polish-action.json"
+    },
+    {
+      "scenarioId": "ar-holdem-offline-hand",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "complete hand, settlement UI and next hand",
+      "source_artifact": "ar-holdem-polish-hand.json"
+    },
+    {
+      "scenarioId": "ar-holdem-guards",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "illegal action guards",
+      "source_artifact": "ar-holdem-polish-guards.json"
+    },
+    {
+      "scenarioId": "ar-holdem-spatial",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "spatial layout",
+      "source_artifact": "ar-holdem-polish-spatial.json"
+    },
+    {
+      "scenarioId": "ar-holdem-gesture-demo",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "visible desktop simulated SIK raycast/pinch and camera movement",
+      "source_artifact": "ar-holdem-polish-gesture-demo.json"
+    },
+    {
+      "scenarioId": "ar-holdem-full-demo",
+      "status": "succeeded",
+      "target": "preview",
+      "coverage": "complete check/call hand through showdown and legitimate table-finished state",
+      "source_artifact": "ar-holdem-polish-full-demo-final.json"
+    }
+  ],
+  "native_gesture": {
+    "interaction": "Desktop simulated SIK raycast and pinch",
+    "runs": [
+      {
+        "scenarioId": "ar-holdem-gesture-demo",
+        "status": "succeeded",
+        "target": "preview",
+        "context": "rehearsal",
+        "source_artifact": "ar-holdem-polish-gesture-demo.json"
+      },
+      {
+        "scenarioId": "ar-holdem-gesture-demo",
+        "status": "succeeded",
+        "target": "preview",
+        "context": "preflop recording attempt",
+        "source_artifact": "ar-holdem-polish-gesture-recording.json"
+      },
+      {
+        "scenarioId": "ar-holdem-gesture-demo",
+        "status": "succeeded",
+        "target": "preview",
+        "context": "river invocation",
+        "source_artifact": "ar-holdem-polish-gesture-river.json"
+      }
+    ],
+    "recording_boundary": "Successful gesture invocation does not prove a recording was saved or a final video was reviewed."
+  },
+  "full_demo": {
+    "scenarioId": "ar-holdem-full-demo",
+    "status": "succeeded",
+    "target": "preview",
+    "source_artifact": "ar-holdem-polish-full-demo-final.json",
+    "initial_failure": {
+      "status": "failed",
+      "source_artifact": "ar-holdem-polish-full-demo.json",
+      "cause": "The demo script incorrectly required a next hand after the human stack reached zero; this was not a game-rule failure.",
+      "fix": "Respect can_start=false as a legitimate terminal state; show Table finished and do not force a redeal.",
+      "final_result": "succeeded"
+    },
+    "next_hand_in_final_recording": false,
+    "next_hand_validation": "Covered independently by ar-holdem-offline-hand on a funded table."
+  },
+  "video": {
+    "path": "ar/demo/ARHoldem-demo.mp4",
+    "status": "recorded_and_reviewed",
+    "seconds": 56.0,
+    "bytes": 3645472,
+    "sha256": "0357cffbae746932767e33cbfd7e76502905c82a222a388c5de90d5983bfcfd2",
+    "codec": "H.264",
+    "resolution": [
+      1920,
+      1280
+    ],
+    "fps": 30,
+    "audio": "silent with English captions",
+    "gameplay": "Native Lens Studio SPECS desktop preview; Lucas v16; real simulated SIK hand pinch and native LEAF button controls; full hand to river showdown; ATLAS queens beat YOU sevens; table ends with human stack zero.",
+    "editing": "1x gameplay; idle-time cuts; aspect ratio preserved; English captions and eight-second closing title; no synthetic gameplay",
+    "gesture_segment_seconds": 11,
+    "physical_glasses": false,
+    "external_api_called": false,
+    "published": false,
+    "validation": "Full ffmpeg decode passed; hand and settlement frames visually inspected.",
+    "metadata": "ar/demo/video-metadata.json",
+    "source_recording_saved": true,
+    "gameplay_footage_seconds": 48,
+    "closing_seconds": 8,
+    "previous_artifact": {
+      "seconds": 122,
+      "status": "backed_up_in_ignored_storage_not_current_video",
+      "baseline_evidence": "ar/verification/lucas-independent-results.json"
+    },
+    "visual_checks": [
+      {
+        "output_second": 14,
+        "content": "simulated hand"
+      },
+      {
+        "output_second": 35,
+        "content": "winner, English hand category and caption"
+      }
+    ]
+  },
+  "external_model_api_called": false,
+  "real_model_calls": 0,
+  "api_validation_boundary": "Local mock endpoint coverage does not establish authentication or availability of a real external provider.",
+  "physical_glasses_tested": false,
+  "real_hand_tracking_tested": false,
+  "repository_published": false,
+  "competition_submitted": false,
+  "review_links": {
+    "entry": "REVIEW.md",
+    "progress": "ar/progress.md",
+    "plan": "ar/task_plan.md",
+    "native_scenario_source": "ar/lens-studio/ARHoldem/Assets/Tests/ARHoldemScenario.ts",
+    "scenario_registration": "ar/lens-studio/ARHoldem/Assets/Tests/LeafIndex.ts",
+    "previous_baseline": "ar/verification/lucas-independent-results.json",
+    "video_script": "ar/lens-studio/ARHoldem/devpost/VIDEO_SCRIPT.md",
+    "video_metadata": "ar/demo/video-metadata.json"
+  },
+  "evidence_handling": "source_artifact values are basenames of local temporary diagnostics inspected for this report, not repository files. Only sanitized results are embedded; personal absolute paths, full logs and credentials are excluded. Review links are repository-relative.",
+  "native_scenario_count": 6,
+  "recorded_showdown": {
+    "evidence": "ar/verification/showdown-final-state.json",
+    "screenshot": "ar/verification/showdown-ready.png",
+    "gesture_screenshot": "ar/verification/simulated-hand-demo.jpg",
+    "mode": "lucas",
+    "board": [
+      "7s",
+      "Ts",
+      "2c",
+      "8c",
+      "As"
+    ],
+    "human_actions": "check/call only; both remaining players all-in on turn, followed by automatic river runout",
+    "reveals": [
+      {
+        "seat": 0,
+        "hole": [
+          "6c",
+          "7d"
+        ],
+        "hand_name": "One pair",
+        "hand_label": "One pair - 7 pair; A / T / 8 kickers"
+      },
+      {
+        "seat": 1,
+        "hole": [
+          "Qc",
+          "Qs"
+        ],
+        "hand_name": "One pair",
+        "hand_label": "One pair - Q pair; A / T / 8 kickers"
+      }
+    ],
+    "winners": [
+      1
+    ],
+    "winner_name": "ATLAS",
+    "awarded_pot_amounts": [
+      40,
+      33,
+      958
+    ],
+    "folded_players_revealed": false,
+    "human_final_stack": 0,
+    "can_start": false,
+    "terminal_label": "Table finished",
+    "next_hand_shown": false,
+    "split_pot_shown": false
+  },
+  "source_archive": {
+    "path": "ar/submission-build/ARHoldem-review-source.zip",
+    "status": "verified",
+    "files": 163,
+    "source_bytes_match": true,
+    "private_config_and_generated_keys_excluded": true,
+    "fresh_extracted_lucas_hand": "passed",
+    "human_actions": 4,
+    "chips": 3000,
+    "original_checkout_used": false
+  }
+}

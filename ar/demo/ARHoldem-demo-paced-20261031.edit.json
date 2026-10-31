@@ -1,0 +1,28 @@
+{
+  "source": "Lens Studio native preview recording, 2026-10-31",
+  "gameplay_speed": 1,
+  "edits": "idle-time cuts and English captions; no synthetic gameplay",
+  "source_segments_seconds": [
+    {
+      "start": 73.5,
+      "end": 89.5,
+      "caption": "Take a seat at a six-player table",
+      "description": "Five Lucas v16 opponents. Each takes time to think before acting."
+    },
+    {
+      "start": 89.5,
+      "end": 111.5,
+      "caption": "Play through the flop, turn and river",
+      "description": "Native spatial buttons. Fixed viewpoint. Actual gameplay at 1x speed."
+    },
+    {
+      "start": 111.5,
+      "end": 123.5,
+      "caption": "See the winner and every chip paid",
+      "description": "YOU wins with aces and sixes. Balance 500 to 536. Net gain: 36 chips."
+    }
+  ],
+  "closing_seconds": 8.0,
+  "audio": "silent",
+  "provider": "lucas"
+}

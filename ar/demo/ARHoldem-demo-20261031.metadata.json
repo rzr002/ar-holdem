@@ -1,0 +1,62 @@
+{
+  "video": "ARHoldem-demo-20261031.mp4",
+  "recorded_date": "2026-10-31",
+  "duration_seconds": 80.0,
+  "bytes": 2730457,
+  "sha256": "2e67e4f122133c83e5e82aa50bdbecbac861706c6792fe04034a62721eac3fef",
+  "format": {
+    "codec_name": "h264",
+    "width": 1920,
+    "height": 1280,
+    "avg_frame_rate": "30/1",
+    "side_data_list": [
+      {}
+    ]
+  },
+  "capture": "Lens Studio native preview recorder",
+  "input": "Actual mouse input through native preview buttons",
+  "camera": "Fixed preview camera, no automated camera sweeps",
+  "provider": "Local Lucas v16",
+  "physical_glasses_tested": false,
+  "external_llm_called": false,
+  "audio": "silent",
+  "gameplay_speed": 1,
+  "edits": "Idle-time cuts, proportional resize, English captions and an 8-second closing card. No synthetic gameplay.",
+  "raw_duration_seconds": 99.365,
+  "raw_sha256": "923cfff8e2273eb2c031ba0a789faede0caf71bf1bac36a1e0f68050cf852630",
+  "verification": {
+    "full_final_ffmpeg_decode": "passed",
+    "raw_full_ffmpeg_decode": "passed",
+    "visual_review": "Timeline frames, winner caption and final layout checked",
+    "camera_sampling_report": "../submission-build/private-evidence/recording-20261031/fixed-qa-report.md",
+    "camera_dense_sampling": "994 background crops at 10fps; all 993 consecutive integer-translation estimates were zero. Raster resolution is about 5 source pixels; sub-100ms or subpixel motion may escape detection.",
+    "raw_video_timestamps": "2981 frames; median interval 33.334ms, range 31.666-35ms; no nonpositive intervals or gaps over 50ms.",
+    "final_layout_review": "Winner caption and 8-second closing card inspected; all text fits."
+  },
+  "publication": {
+    "uploaded": false,
+    "devpost_submitted": false
+  },
+  "source_archive_rebuilt": false,
+  "game_result": {
+    "winner": "LYRA",
+    "winner_hole_cards": [
+      "Jh",
+      "Jd"
+    ],
+    "human_hole_cards": [
+      "Td",
+      "2s"
+    ],
+    "board": [
+      "7s",
+      "Th",
+      "Kh",
+      "Kc",
+      "7h"
+    ],
+    "winner_hand": "Two pair, kings and jacks",
+    "human_hand": "Two pair, kings and tens",
+    "next_hand_shown": true
+  }
+}

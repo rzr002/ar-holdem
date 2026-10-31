@@ -1,0 +1,79 @@
+- !<AssetImportMetadata/ce26c9ec-b080-498f-8127-167da33766e0>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e5423f1e-377d-489a-9cb4-7ce5667760c3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e5423f1e-377d-489a-9cb4-7ce5667760c3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5c285c90-5d0d-411f-b35c-e205e733bc69
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5c285c90-5d0d-411f-b35c-e205e733bc69>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7d0018b0-e118-44dd-9e2e-b90559ccceeb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    atlasChips: false
+    depthCm: false
+    feltColor: false
+    humanChips: false
+    lyraChips: false
+    material: false
+    novaChips: false
+    orionChips: false
+    potChips: false
+    rimColor: false
+    vegaChips: false
+    widthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      widthCm: !<float> 68.000000
+      depthCm: !<float> 44.000000
+      humanChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      atlasChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      novaChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      orionChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      lyraChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      vegaChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      potChips: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      feltColor: !<Vec4> {x: 0.045000, y: 0.290000, z: 0.230000, w: 1.000000}
+      rimColor: !<Vec4> {x: 0.620000, y: 0.420000, z: 0.160000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Asset.Material material {"hint":"Unlit material used as a clone template"}'
+    - '// @input float widthCm = 86 {"hint":"Table width in centimeters"}'
+    - '// @input float depthCm = 60 {"hint":"Table depth in centimeters"}'
+    - '// @input SceneObject humanChips {"hint":"Human chip pile anchor"}'
+    - '// @input SceneObject atlasChips {"hint":"Atlas chip pile anchor"}'
+    - '// @input SceneObject novaChips {"hint":"Nova chip pile anchor"}'
+    - '// @input SceneObject orionChips {"hint":"Orion chip pile anchor"}'
+    - '// @input SceneObject lyraChips {"hint":"Lyra chip pile anchor"}'
+    - '// @input SceneObject vegaChips {"hint":"Vega chip pile anchor"}'
+    - '// @input SceneObject potChips {"hint":"Pot chip pile anchor"}'
+    - '// @input vec4 feltColor = {0.055,0.32,0.25,1} {"hint":"Felt tint", "widget":"color"}'
+    - '// @input vec4 rimColor = {0.32,0.23,0.14,1} {"hint":"Padded table rail tint", "widget":"color"}'

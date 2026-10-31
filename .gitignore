@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.local.env
+ar/submission-build/
+.migration/
+# Private development notes and local account/tool configuration
+/REVIEW.md
+/ar/progress.md
+/ar/task_plan.md
+**/.mcp.json
+**/.cursor/
+**/.claude/
+**/.codex/
+**/.vscode/
+**/*.pem

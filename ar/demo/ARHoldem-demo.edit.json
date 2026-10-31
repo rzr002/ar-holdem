@@ -1,0 +1,46 @@
+{
+  "source": "Lens Studio native preview recording, 2026-10-29",
+  "gameplay_speed": 1,
+  "edits": "idle-time cuts and English captions; no synthetic gameplay",
+  "source_segments_seconds": [
+    {
+      "start": 0,
+      "end": 5,
+      "caption": "One player. Five local opponents.",
+      "description": "Lucas v16 runs locally. No LLM account or API key is needed."
+    },
+    {
+      "start": 9,
+      "end": 16,
+      "caption": "Deal a six-seat hand",
+      "description": "Private cards stay face down until eligible players reach showdown."
+    },
+    {
+      "start": 16,
+      "end": 27,
+      "caption": "Simulated hand interaction",
+      "description": "A real SIK pinch triggers Call. A small camera sweep shows the spatial table."
+    },
+    {
+      "start": 27,
+      "end": 34,
+      "caption": "Play through to the river",
+      "description": "Legal check/call actions advance the hand; the engine resolves the runout."
+    },
+    {
+      "start": 34,
+      "end": 48,
+      "caption": "Why ATLAS wins",
+      "description": "Both hands have one pair: ATLAS has queens, beating your pair of sevens."
+    },
+    {
+      "start": 48,
+      "end": 52,
+      "caption": "Clear settlement and table status",
+      "description": "Showdown cards reveal; the winner turns gold. Folded hands stay private."
+    }
+  ],
+  "closing_seconds": 8,
+  "audio": "silent",
+  "provider": "lucas"
+}

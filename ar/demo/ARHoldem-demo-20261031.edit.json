@@ -1,0 +1,52 @@
+{
+  "source": "Lens Studio native preview recording, 2026-10-31",
+  "gameplay_speed": 1,
+  "edits": "idle-time cuts and English captions; no synthetic gameplay",
+  "source_segments_seconds": [
+    {
+      "start": 0,
+      "end": 14,
+      "caption": "A six-seat poker table in your space",
+      "description": "One player and five local Lucas v16 opponents. Virtual chips only."
+    },
+    {
+      "start": 14,
+      "end": 26,
+      "caption": "Call 21 and see the flop",
+      "description": "Use the spatial buttons to act. Cards and chips animate between turns."
+    },
+    {
+      "start": 36,
+      "end": 49,
+      "caption": "From flop to turn",
+      "description": "Check the flop, then respond to LYRA's turn bet of 40."
+    },
+    {
+      "start": 49,
+      "end": 54,
+      "caption": "The river arrives",
+      "description": "Each board card appears in sequence while actions are temporarily locked."
+    },
+    {
+      "start": 59,
+      "end": 66,
+      "caption": "Call 96 to reach the showdown",
+      "description": "The final bet is resolved before the opponent's cards are revealed."
+    },
+    {
+      "start": 66,
+      "end": 74,
+      "caption": "Why LYRA wins",
+      "description": "Kings and jacks beat kings and tens. Hole cards and the winner are shown."
+    },
+    {
+      "start": 83,
+      "end": 96,
+      "caption": "A smooth start to the next hand",
+      "description": "The dealer and blinds rotate. Updated chip balances carry forward."
+    }
+  ],
+  "closing_seconds": 8.0,
+  "audio": "silent",
+  "provider": "lucas"
+}

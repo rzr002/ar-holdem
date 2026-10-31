@@ -1,0 +1,154 @@
+{
+  "mode": "lucas",
+  "hand": 1,
+  "street": "river",
+  "done": true,
+  "board": [
+    "7s",
+    "Ts",
+    "2c",
+    "8c",
+    "As"
+  ],
+  "hole": [
+    "6c",
+    "7d"
+  ],
+  "settlement": {
+    "reason": "showdown",
+    "winners": [
+      1
+    ],
+    "reveals": [
+      {
+        "seat": 0,
+        "hole": [
+          "6c",
+          "7d"
+        ],
+        "hand_name": "One pair",
+        "hand_label": "One pair - 7 pair; A / T / 8 kickers"
+      },
+      {
+        "seat": 1,
+        "hole": [
+          "Qc",
+          "Qs"
+        ],
+        "hand_name": "One pair",
+        "hand_label": "One pair - Q pair; A / T / 8 kickers"
+      }
+    ],
+    "pots": [
+      {
+        "index": 0,
+        "amount": 40,
+        "winners": [
+          1
+        ],
+        "awards": [
+          {
+            "seat": 1,
+            "amount": 40
+          }
+        ],
+        "hand_name": "One pair"
+      },
+      {
+        "index": 1,
+        "amount": 33,
+        "winners": [
+          1
+        ],
+        "awards": [
+          {
+            "seat": 1,
+            "amount": 33
+          }
+        ],
+        "hand_name": "One pair"
+      },
+      {
+        "index": 2,
+        "amount": 958,
+        "winners": [
+          1
+        ],
+        "awards": [
+          {
+            "seat": 1,
+            "amount": 958
+          }
+        ],
+        "hand_name": "One pair"
+      }
+    ],
+    "refunds": []
+  },
+  "net": [
+    -500,
+    531,
+    -10,
+    0,
+    -21,
+    0
+  ],
+  "players": [
+    {
+      "seat": 0,
+      "name": "YOU",
+      "stack": 0,
+      "bet": 0,
+      "committed": 0,
+      "folded": false,
+      "dealt_in": true
+    },
+    {
+      "seat": 1,
+      "name": "ATLAS",
+      "stack": 1031,
+      "bet": 0,
+      "committed": 0,
+      "folded": false,
+      "dealt_in": true
+    },
+    {
+      "seat": 2,
+      "name": "NOVA",
+      "stack": 490,
+      "bet": 0,
+      "committed": 0,
+      "folded": true,
+      "dealt_in": true
+    },
+    {
+      "seat": 3,
+      "name": "ORION",
+      "stack": 500,
+      "bet": 0,
+      "committed": 0,
+      "folded": true,
+      "dealt_in": true
+    },
+    {
+      "seat": 4,
+      "name": "LYRA",
+      "stack": 479,
+      "bet": 0,
+      "committed": 0,
+      "folded": true,
+      "dealt_in": true
+    },
+    {
+      "seat": 5,
+      "name": "VEGA",
+      "stack": 500,
+      "bet": 0,
+      "committed": 0,
+      "folded": true,
+      "dealt_in": true
+    }
+  ],
+  "can_start": false,
+  "error": ""
+}

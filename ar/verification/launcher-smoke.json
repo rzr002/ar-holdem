@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-28T21:35:58+0800",
+  "launched_from_outside_checkout": true,
+  "mode": "strategic",
+  "port": "ephemeral, not 8765",
+  "http_status": 200,
+  "fresh_hand_number": 0,
+  "sigint_exit_code": 0,
+  "stderr_empty": true,
+  "real_model_calls": 0,
+  "elapsed_seconds": 0.43,
+  "explicit_process_proxy_configured": true
+}

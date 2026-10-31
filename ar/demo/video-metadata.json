@@ -1,0 +1,21 @@
+{
+  "path": "ar/demo/ARHoldem-demo.mp4",
+  "status": "recorded_and_reviewed",
+  "seconds": 56.0,
+  "bytes": 3645472,
+  "sha256": "0357cffbae746932767e33cbfd7e76502905c82a222a388c5de90d5983bfcfd2",
+  "codec": "H.264",
+  "resolution": [
+    1920,
+    1280
+  ],
+  "fps": 30,
+  "audio": "silent with English captions",
+  "gameplay": "Native Lens Studio SPECS desktop preview; Lucas v16; real simulated SIK hand pinch and native LEAF button controls; full hand to river showdown; ATLAS queens beat YOU sevens; table ends with human stack zero.",
+  "editing": "1x gameplay; idle-time cuts; aspect ratio preserved; English captions and eight-second closing title; no synthetic gameplay",
+  "gesture_segment_seconds": 11,
+  "physical_glasses": false,
+  "external_api_called": false,
+  "published": false,
+  "validation": "Full ffmpeg decode passed; hand and settlement frames visually inspected."
+}

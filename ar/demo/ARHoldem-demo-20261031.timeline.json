@@ -1,0 +1,44 @@
+[
+  [
+    0,
+    14,
+    "A six-seat poker table in your space",
+    "One player and five local Lucas v16 opponents. Virtual chips only."
+  ],
+  [
+    14,
+    26,
+    "Call 21 and see the flop",
+    "Use the spatial buttons to act. Cards and chips animate between turns."
+  ],
+  [
+    36,
+    49,
+    "From flop to turn",
+    "Check the flop, then respond to LYRA's turn bet of 40."
+  ],
+  [
+    49,
+    54,
+    "The river arrives",
+    "Each board card appears in sequence while actions are temporarily locked."
+  ],
+  [
+    59,
+    66,
+    "Call 96 to reach the showdown",
+    "The final bet is resolved before the opponent's cards are revealed."
+  ],
+  [
+    66,
+    74,
+    "Why LYRA wins",
+    "Kings and jacks beat kings and tens. Hole cards and the winner are shown."
+  ],
+  [
+    83,
+    96,
+    "A smooth start to the next hand",
+    "The dealer and blinds rotate. Updated chip balances carry forward."
+  ]
+]

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "target": "Lens Studio desktop preview",
+  "mode": "strategic",
+  "interaction": "CUA mouse press and release on native Check button, 250 ms",
+  "before": {
+    "hand": 2,
+    "revision": 24,
+    "street": "river",
+    "done": false
+  },
+  "after": {
+    "hand": 2,
+    "revision": 26,
+    "street": "river",
+    "done": true
+  },
+  "input_timestamps": [
+    "21:52:50.714 touch down",
+    "21:52:51.034 touch up"
+  ],
+  "status": "passed"
+}

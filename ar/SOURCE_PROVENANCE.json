@@ -1,0 +1,22 @@
+{
+  "source_repository": "https://github.com/rzr002/terminal-holdem",
+  "source_commit": "c954a16484e88fd21aec420a4e0c768584c96a05",
+  "split_date": "2026-10-29",
+  "purpose": "Independent AR Holdem project; terminal repository is retained independently",
+  "copied_legacy": [
+    "holdem/",
+    "skills/",
+    "tests/",
+    "install.py",
+    "play.py"
+  ],
+  "new_ar_work": [
+    "ar/",
+    "holdem/ar_session.py",
+    "holdem/ar_server.py",
+    "holdem/api_agent.py",
+    "tests/test_ar_session.py",
+    "tests/test_ar_server.py",
+    "tests/test_api_agent.py"
+  ]
+}

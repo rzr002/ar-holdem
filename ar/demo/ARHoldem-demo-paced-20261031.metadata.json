@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-31",
+  "video": "ARHoldem-demo-paced-20261031.mp4",
+  "durationSeconds": 58,
+  "width": 1920,
+  "height": 1280,
+  "fps": 30,
+  "codec": "H264",
+  "audio": "silent",
+  "sizeBytes": 1806941,
+  "sha256": "c207601be9a39f5eeca3ef1f6d4c4e87d1ce4ccbad758eb11c29756ff424062d",
+  "rawFile": "ar/submission-build/raw-recordings/ARHoldem-pacing-20261031-raw.mp4",
+  "rawDurationSeconds": 137.165,
+  "retainedContinuousInterval": [
+    73.5,
+    123.5
+  ],
+  "gameplaySpeed": 1,
+  "closingSeconds": 8,
+  "source": "Lens Studio native preview recording",
+  "provider": "Lucas v16 local",
+  "controls": "LEAF DefaultLeafInteractor triggers native UIKit buttons; not physical hand tracking",
+  "outcome": {
+    "hole": [
+      "6h",
+      "Ah"
+    ],
+    "board": [
+      "3h",
+      "6c",
+      "Ac",
+      "3s",
+      "8s"
+    ],
+    "net": [
+      36,
+      -5,
+      -10,
+      -21,
+      0,
+      0
+    ],
+    "settlement": {
+      "reason": "showdown",
+      "winners": [
+        0
+      ],
+      "reveals": [
+        {
+          "seat": 0,
+          "hole": [
+            "6h",
+            "Ah"
+          ],
+          "hand_name": "Two pair",
+          "hand_label": "Two pair - A / 6, 8 kicker"
+        },
+        {
+          "seat": 3,
+          "hole": [
+            "2s",
+            "2h"
+          ],
+          "hand_name": "Two pair",
+          "hand_label": "Two pair - 3 / 2, A kicker"
+        }
+      ],
+      "pots": [
+        {
+          "index": 0,
+          "amount": 20,
+          "winners": [
+            0
+          ],
+          "awards": [
+            {
+              "seat": 0,
+              "amount": 20
+            }
+          ],
+          "hand_name": "Two pair"
+        },
+        {
+          "index": 1,
+          "amount": 15,
+          "winners": [
+            0
+          ],
+          "awards": [
+            {
+              "seat": 0,
+              "amount": 15
+            }
+          ],
+          "hand_name": "Two pair"
+        },
+        {
+          "index": 2,
+          "amount": 22,
+          "winners": [
+            0
+          ],
+          "awards": [
+            {
+              "seat": 0,
+              "amount": 22
+            }
+          ],
+          "hand_name": "Two pair"
+        }
+      ],
+      "refunds": []
+    }
+  },
+  "nativeFlow": {
+    "flow": "hand",
+    "phases": [
+      "dealing",
+      "thinking",
+      "action",
+      "idle",
+      "flop",
+      "turn",
+      "river",
+      "showdown",
+      "payout",
+      "settled"
+    ],
+    "cardCounts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "boardCounts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "thinkingSeconds": [
+      2.3229662909870967,
+      2.2762589590856805,
+      2.206363791017793,
+      2.2413357080658898,
+      2.3004796659806743,
+      2.209368666051887,
+      2.161847582901828,
+      2.180435208021663
+    ],
+    "actionTransferSeen": true,
+    "payoutTransferSeen": true,
+    "winnerSeats": [
+      0
+    ],
+    "stacks": [
+      536,
+      495,
+      490,
+      479,
+      500,
+      500
+    ],
+    "net": [
+      36,
+      -5,
+      -10,
+      -21,
+      0,
+      0
+    ],
+    "visibleActions": 13,
+    "dealSeconds": 1.9834764170227572,
+    "cameraAndDockStable": true,
+    "duplicateInputBlocked": true,
+    "idleStable": true
+  },
+  "qa": {
+    "fullRawDecode": "passed",
+    "fullFinalDecode": "passed",
+    "reviewedFinalFramesSeconds": [
+      44,
+      54
+    ],
+    "motion": {
+      "method": "integer translation phase correlation, 2Hz, half-resolution, two clean wall crops",
+      "samples": 274,
+      "detectedIntegerShifts": 0,
+      "limits": "Cannot rule out subpixel motion, rotation/parallax, or movement between sampled frames."
+    },
+    "timestampSpacing": {
+      "frames": 4115,
+      "medianMs": 33.333,
+      "maxMs": 35,
+      "largeGapsOver1_5Nominal": 0,
+      "limits": "Encoded PTS continuity does not prove no duplicated captures."
+    }
+  },
+  "uploaded": false,
+  "physicalGlassesTested": false,
+  "externalLLMUsed": false
+}

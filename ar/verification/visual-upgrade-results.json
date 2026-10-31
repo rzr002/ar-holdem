@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-29",
+  "scope": "Card, chip and table visual upgrade",
+  "typescript_compile": "succeeded",
+  "native_leaf_scenarios": [
+    {
+      "scenarioId": "ar-holdem-action",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-offline-hand",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-guards",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-ik-reach",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-spatial",
+      "status": "succeeded",
+      "target": "preview"
+    }
+  ],
+  "chip_amount_validation": {
+    "source": "poker_visual_chips worker exhaustive pure-function check",
+    "range_inclusive": [
+      0,
+      3000
+    ],
+    "cases": 3001,
+    "exact_sum": true,
+    "max_discs": 21,
+    "max_stack_height_discs": 9,
+    "starting_500": {
+      "100": 4,
+      "25": 3,
+      "5": 4,
+      "1": 5
+    }
+  },
+  "card_geometry_validation": {
+    "source": "poker_visual_cards worker geometry check",
+    "cached_meshes": 24,
+    "triangles": 3210,
+    "winding": "CCW",
+    "degenerate_triangles": 0,
+    "front_back_slot_states": "passed"
+  },
+  "visual_inspection": {
+    "native_screenshots": [
+      "visual-upgrade-offline.png",
+      "visual-upgrade-luna.png"
+    ],
+    "four_suits_visible_in_offline_capture": true,
+    "hidden_opponent_card_backs": true,
+    "chip_stacks_visible": true,
+    "preview_environment": "Evening Room",
+    "background_colored_prop": "Confirmed simulation room object with AR root temporarily hidden"
+  },
+  "project_saved": true,
+  "server_url": "http://127.0.0.1:8765",
+  "live_connection": {
+    "mode": "codex",
+    "provider": "CODEX / gpt-6-luna",
+    "hand": 1,
+    "revision": 4,
+    "street": "preflop",
+    "actor": 0,
+    "thinking": false,
+    "error": "",
+    "table_size": 6
+  },
+  "extra_real_model_calls_this_visual_revision": 0,
+  "offline_qa_server_stopped": true,
+  "runtime_note": "No game errors after final refresh. LEAF plugin emitted a reset-time warning about destroyed state-save instance; final log tail errors empty.",
+  "limits": [
+    "Physical glasses appearance and real-world occlusion have not been verified.",
+    "Earlier 116 backend tests and real Luna hand are separate evidence, not rerun in this visual revision."
+  ]
+}

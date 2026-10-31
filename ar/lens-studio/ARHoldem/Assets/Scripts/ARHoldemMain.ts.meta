@@ -1,0 +1,76 @@
+- !<AssetImportMetadata/8caa6617-d402-4e28-bcb6-67309f9e4bf1>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7cedf58d-e16c-4324-b0a1-350bb7284ccc
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7cedf58d-e16c-4324-b0a1-350bb7284ccc
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 7436fb16-2bdc-4f8a-a876-fc5d25b2b75a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/7436fb16-2bdc-4f8a-a876-fc5d25b2b75a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 1575abcb-9abd-443d-b32c-41f228bf7d5f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    actionPresentationSeconds: false
+    boardCardSeconds: false
+    geometry: false
+    pollSeconds: false
+    requestTimeoutSeconds: false
+    serverUrl: false
+    sounds: false
+    streetPauseSeconds: false
+    ui: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - ui: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      geometry: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      sounds: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      serverUrl: "http://127.0.0.1:8765"
+      pollSeconds: 0.750000
+      requestTimeoutSeconds: !<float> 5.000000
+      actionPresentationSeconds: 0.680000
+      boardCardSeconds: 0.400000
+      streetPauseSeconds: 0.500000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @ui {\"widget\":\"label\", \"label\":\"AR Hold'em — local game connection\"}"
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 ui {"hint":"Passive spatial table UI"}'
+    - '// @input AssignableType_2 geometry {"hint":"Optional table and chip geometry"}'
+    - '// @input AssignableType_3 sounds {"hint":"Optional action, turn and result sounds"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Connection"}'
+    - '// @input string serverUrl = "http://127.0.0.1:8765" {"hint":"Local bridge URL; HTTP requires Experimental API in this project"}'
+    - '// @input float pollSeconds = 0.75 {"hint":"Seconds between state reads", "widget":"slider", "min":0.25, "max":3, "step":0.25}'
+    - '// @input float requestTimeoutSeconds = 5 {"hint":"HTTP timeout, independent of the asynchronous model turn", "widget":"slider", "min":2, "max":15, "step":1}'
+    - '// @input float actionPresentationSeconds = 1 {"hint":"Minimum readable pause between visible actions", "widget":"slider", "min":1, "max":1.8, "step":0.1}'
+    - '// @input float boardCardSeconds = 0.55 {"hint":"Time used to reveal each community card", "widget":"slider", "min":0.5, "max":0.8, "step":0.05}'
+    - '// @input float streetPauseSeconds = 0.8 {"hint":"Pause after flop and turn are complete", "widget":"slider", "min":0.7, "max":1.2, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

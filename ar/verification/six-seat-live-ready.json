@@ -1,0 +1,42 @@
+{
+  "table_size": 6,
+  "mode": "codex",
+  "provider": "CODEX / gpt-6.1-sol",
+  "hand": 0,
+  "revision": 0,
+  "thinking": false,
+  "can_start": true,
+  "error": "",
+  "players": [
+    {
+      "seat": 0,
+      "name": "YOU",
+      "stack": 500
+    },
+    {
+      "seat": 1,
+      "name": "ATLAS",
+      "stack": 500
+    },
+    {
+      "seat": 2,
+      "name": "NOVA",
+      "stack": 500
+    },
+    {
+      "seat": 3,
+      "name": "ORION",
+      "stack": 500
+    },
+    {
+      "seat": 4,
+      "name": "LYRA",
+      "stack": 500
+    },
+    {
+      "seat": 5,
+      "name": "VEGA",
+      "stack": 500
+    }
+  ]
+}

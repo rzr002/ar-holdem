@@ -1,0 +1,38 @@
+[
+  [
+    0,
+    5,
+    "One player. Five local opponents.",
+    "Lucas v16 runs locally. No LLM account or API key is needed."
+  ],
+  [
+    9,
+    16,
+    "Deal a six-seat hand",
+    "Private cards stay face down until eligible players reach showdown."
+  ],
+  [
+    16,
+    27,
+    "Simulated hand interaction",
+    "A real SIK pinch triggers Call. A small camera sweep shows the spatial table."
+  ],
+  [
+    27,
+    34,
+    "Play through to the river",
+    "Legal check/call actions advance the hand; the engine resolves the runout."
+  ],
+  [
+    34,
+    48,
+    "Why ATLAS wins",
+    "Both hands have one pair: ATLAS has queens, beating your pair of sevens."
+  ],
+  [
+    48,
+    52,
+    "Clear settlement and table status",
+    "Showdown cards reveal; the winner turns gold. Folded hands stay private."
+  ]
+]

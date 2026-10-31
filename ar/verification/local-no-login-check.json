@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-28T12:02:33.559Z",
+  "scope": "Local template verification only",
+  "authentication": {
+    "isAuthorized": false,
+    "basis": "Read-only ExecuteEditorCode check immediately preceding this verification"
+  },
+  "projectPath": "<REPO_ROOT>",
+  "toolsCount": 38,
+  "compile": {
+    "logFile": "<LOCAL_LENS_STUDIO_LOG_PATH>",
+    "status": "succeeded"
+  },
+  "runtime": {
+    "status": "success",
+    "firstActivityAtMs": 26,
+    "errors": [],
+    "printCount": 0,
+    "newBytes": 3460
+  },
+  "screenshotPath": "<LOCAL_SCREENSHOT_PATH>",
+  "screenshot": {
+    "isError": false,
+    "contentTypes": [
+      "text"
+    ],
+    "bytes": 269546
+  },
+  "sanitized_paths": true
+}

@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-31",
+  "scenario": "ar-holdem-presentation-human-win",
+  "nativeStatus": "succeeded",
+  "target": "Lens Studio preview, SPECS 27, Evening Room",
+  "fixture": "real TableSession/engine, deterministic calling agent, seed8, localhost8767",
+  "flow": {
+    "flow": "hand",
+    "phases": [
+      "dealing",
+      "thinking",
+      "action",
+      "idle",
+      "flop",
+      "turn",
+      "river",
+      "showdown",
+      "payout",
+      "settled"
+    ],
+    "cardCounts": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "boardCounts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "thinkingSeconds": [
+      2.254540125024505,
+      2.2003677500179037,
+      2.2673723329789937,
+      2.1979240420041606,
+      2.2471045829588547,
+      2.2495076248887926,
+      2.210121333017014,
+      2.222393542062491,
+      2.240479667088948,
+      2.202656083041802,
+      2.2673411670839414,
+      2.217104792012833,
+      2.1851999999489635,
+      2.2306774159660563,
+      2.212099584052339,
+      2.2287172919604927,
+      2.2097278750734404,
+      2.1839420420583338,
+      2.207655915990472,
+      2.167041457956657
+    ],
+    "actionTransferSeen": true,
+    "payoutTransferSeen": true,
+    "winnerSeats": [
+      0
+    ],
+    "stacks": [
+      550,
+      490,
+      490,
+      490,
+      490,
+      490
+    ],
+    "net": [
+      50,
+      -10,
+      -10,
+      -10,
+      -10,
+      -10
+    ],
+    "visibleActions": 25,
+    "dealSeconds": 1.7946834999602288,
+    "cameraAndDockStable": true,
+    "duplicateInputBlocked": true,
+    "idleStable": true
+  },
+  "unitChecks": [
+    "node tests/test_presentation.cjs passed",
+    "22 engine tests passed"
+  ],
+  "compile": "succeeded",
+  "physicalHeadset": false,
+  "externalLLM": false,
+  "saveStatus": "saved via official Editor API",
+  "oldVideoReflectsThisChange": false,
+  "normalEndpointRestored": "http://127.0.0.1:8765"
+}

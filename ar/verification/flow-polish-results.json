@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-29",
+  "scope": "Ordinary gameplay pacing and visual stability; no video recording or publication",
+  "backend": {
+    "tests": 147,
+    "seconds": 26.885,
+    "result": "passed"
+  },
+  "presentation_unit_tests": "node tests/test_presentation.cjs passed",
+  "native_scenarios": {
+    "presentation-deal": [
+      {
+        "scenarioId": "ar-holdem-presentation",
+        "status": "succeeded",
+        "target": "preview"
+      }
+    ],
+    "presentation-hand": [
+      {
+        "scenarioId": "ar-holdem-presentation-hand",
+        "status": "succeeded",
+        "target": "preview"
+      }
+    ],
+    "presentation-allin": [
+      {
+        "scenarioId": "ar-holdem-presentation-allin",
+        "status": "succeeded",
+        "target": "preview"
+      }
+    ],
+    "guards": [
+      {
+        "scenarioId": "ar-holdem-guards",
+        "status": "succeeded",
+        "target": "preview"
+      }
+    ],
+    "offline-hand-and-next-hand": [
+      {
+        "scenarioId": "ar-holdem-offline-hand",
+        "status": "succeeded",
+        "target": "preview"
+      }
+    ]
+  },
+  "native_metrics": [
+    {
+      "flow": "deal",
+      "phases": [
+        "dealing",
+        "action",
+        "idle"
+      ],
+      "cardCounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "boardCounts": [
+        0
+      ],
+      "visibleActions": 4,
+      "dealSeconds": 1.8859903329284862,
+      "cameraAndDockStable": true,
+      "duplicateInputBlocked": true,
+      "idleStable": true
+    },
+    {
+      "flow": "hand",
+      "phases": [
+        "dealing",
+        "action",
+        "idle",
+        "flop",
+        "turn",
+        "river",
+        "showdown"
+      ],
+      "cardCounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "boardCounts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visibleActions": 13,
+      "dealSeconds": 1.8655831669457257,
+      "cameraAndDockStable": true,
+      "duplicateInputBlocked": true,
+      "idleStable": true
+    },
+    {
+      "flow": "allin",
+      "phases": [
+        "dealing",
+        "action",
+        "idle",
+        "flop",
+        "turn",
+        "river",
+        "showdown"
+      ],
+      "cardCounts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "boardCounts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "visibleActions": 10,
+      "dealSeconds": 1.8919194580521435,
+      "cameraAndDockStable": true,
+      "duplicateInputBlocked": true,
+      "idleStable": true
+    }
+  ],
+  "compile": [
+    {
+      "logFile": "LensStudioLog-2026-10-29-20-13-17-402-dae05.txt",
+      "status": "succeeded"
+    }
+  ],
+  "saved": [
+    {
+      "console": [],
+      "returnValue": {
+        "project": "ar/lens-studio/ARHoldem/SpecsBaseTemplate.esproj",
+        "saved": true
+      },
+      "status": "Execution Succeeded"
+    }
+  ],
+  "qa_modes": {
+    "deal": "Lucas v16",
+    "hand": "Lucas v16",
+    "allin": "Explicit local deterministic call-only test agent",
+    "next_hand": "Lucas v16"
+  },
+  "no_external_paid_models": true,
+  "physical_glasses_tested": false,
+  "video_recorded": false,
+  "submission_archive_rebuilt": false,
+  "changes": [
+    "64-revision privacy-filtered journal; strict gap handling and resync",
+    "two clockwise rounds of hole cards, monotonic visible-card count",
+    "readable action cues before community cards; sequential flop/turn/river even on all-in",
+    "settlement and refunds staged with chip conservation",
+    "idempotent UI setters; no automatic camera sweep; fixed anchors",
+    "controls locked until display catches authority; next-hand cleanup"
+  ],
+  "source_sha256": {
+    "holdem/ar_session.py": "fbe05a7fe154cfcc3f7c8fbf80272b463c644e631d51510002e3086b781a48ef",
+    "holdem/ar_server.py": "1f9dc9e41f65a2c346be44ae2ae0968577a7a72dff36e6c0972a42fd99fbe27e",
+    "ar/lens-studio/ARHoldem/Assets/Scripts/ARHoldemMain.ts": "fe15d9eac2d688b27bdf7a1d017d445adf7d82f36cb41bb9be280621e8e7f117",
+    "ar/lens-studio/ARHoldem/Assets/Scripts/ARHoldemTableUI.ts": "f5b76cf6b2156b0c40ddde29aedd98ae05612c6471b6d739816a461e3aa48e2c",
+    "ar/lens-studio/ARHoldem/Assets/Scripts/ARHoldemPresentation.ts": "f35160b41bd1ef3dcffea6ddab6ac9179c8a3836d9e3720bea8bcc54f53a9e2b",
+    "ar/lens-studio/ARHoldem/Assets/Scripts/ARHoldemTableGeometry.ts": "28151ea49bf4f53cd04d50a0ef3ee5dc825c351365075f1a58a138095fbbd14f"
+  },
+  "final_runtime": {
+    "status": "success",
+    "errors": [],
+    "mode": "refresh"
+  },
+  "ready_state": {
+    "mode": "lucas",
+    "hand": 0,
+    "can_start": true
+  },
+  "restart_note": "A connection-refused message during the QA bridge restart cleared; subsequent fresh preview log has no errors."
+}

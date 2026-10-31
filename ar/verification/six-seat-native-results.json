@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "table_size": 6,
+  "mode": "strategic",
+  "deck_seed": 9,
+  "strategy_seed": 9,
+  "results": [
+    {
+      "scenarioId": "ar-holdem-spatial",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-action",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-offline-hand",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-guards",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-ik-reach",
+      "status": "succeeded",
+      "target": "preview"
+    }
+  ],
+  "note": "First guards execution was interrupted by preview reset; results contain the completed serial rerun."
+}

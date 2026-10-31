@@ -1,0 +1,30 @@
+[
+  {
+    "byteOffset": 4688537,
+    "errors": [
+      "W 22:18:13.487 ${CONFIG_DIR}/Bundle/Plugins/[ChatTool] LEAF Plugin@5.23.0@362f6c78a8b5e47e6431049afb6a7109/dist/main.js:802 log] [LeafPlugin][LeafPlugin] Skipping plugin state save: instance was destroyed before its state finished loading."
+    ],
+    "errorsCapped": false,
+    "firstActivityAtMs": 35,
+    "logFile": "<LOCAL_LENS_STUDIO_LOG_PATH>",
+    "mode": "refresh",
+    "newBytes": 7214,
+    "prints": [
+      "I 22:18:14.899 [Preview 1] [Packages/SpectaclesInteractionKit.lspkg/Core/ConfigurationValidator/ConfigurationValidator.ts:16] SIK Version : 0.18.0",
+      "I 22:18:15.715 [Preview 1] [Packages/Leaf.lspkg/Utils/common/Logger.ts:89] I [DefaultLeafScenarioManager] [  0.488s]Register scenario: ar-holdem-spatial",
+      "I 22:18:15.715 [Preview 1] [Packages/Leaf.lspkg/Utils/common/Logger.ts:89] I [DefaultLeafScenarioManager] [  0.488s]Register scenario: ar-holdem-action",
+      "I 22:18:15.715 [Preview 1] [Packages/Leaf.lspkg/Utils/common/Logger.ts:89] I [DefaultLeafScenarioManager] [  0.488s]Register scenario: ar-holdem-offline-hand",
+      "I 22:18:15.715 [Preview 1] [Packages/Leaf.lspkg/Utils/common/Logger.ts:89] I [DefaultLeafScenarioManager] [  0.488s]Register scenario: ar-holdem-guards",
+      "I 22:18:15.715 [Preview 1] [Packages/Leaf.lspkg/Utils/common/Logger.ts:89] I [DefaultLeafScenarioManager] [  0.488s]Register scenario: ar-holdem-ik-reach",
+      "I 22:18:15.912 [Preview 1] [Assets/Scripts/ARHoldemTableUI.ts:148] [ARHoldem] spatial UI ready",
+      "I 22:18:15.924 [Preview 1] [Assets/Scripts/ARHoldemMain.ts:78] [ARHoldem] bridge client ready; waiting for Deal",
+      "I 22:18:16.189 [Preview 1] [Assets/Scripts/ARHoldemMain.ts:203] [ARHoldem] hand=0 revision=0 street=ready actor=null thinking=false done=false mode=codex"
+    ],
+    "printsCapped": false,
+    "rotated": false,
+    "settleElapsedMs": 15141,
+    "status": "success",
+    "truncated": false,
+    "sanitized_paths": true
+  }
+]

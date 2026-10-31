@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-29",
+  "independent_repository": "ar-holdem",
+  "source_commit": "c954a16484e88fd21aec420a4e0c768584c96a05",
+  "default_provider": "lucas",
+  "backend_suite": {
+    "tests": 141,
+    "seconds": 26.047,
+    "result": "OK",
+    "command": ".venv/bin/python -m unittest discover -s tests -v"
+  },
+  "native_typescript": "succeeded",
+  "native_scenarios": [
+    {
+      "scenarioId": "ar-holdem-action",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-offline-hand",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-guards",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-ik-reach",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "ar-holdem-spatial",
+      "status": "succeeded",
+      "target": "preview"
+    }
+  ],
+  "native_ik_initial_failure": {
+    "scenarioId": "ar-holdem-ik-reach",
+    "status": "failed",
+    "target": "preview",
+    "root_cause": "Preview camera was behind the table and the hand ray could not reach the target. This was corrected by resetting preview pose to player origin (0, 0, 0)."
+  },
+  "native_ik_final": {
+    "scenarioId": "ar-holdem-ik-reach",
+    "status": "succeeded",
+    "target": "preview",
+    "interaction": "real IK raycast and pinch",
+    "cleanup": "test finally destroys IK test objects and restores preview pose"
+  },
+  "api_validation": "6 mock HTTP adapter tests plus 3 mock API-session tests: two complete six-seat hands, next hand, five isolated views, retry after HTTP 500, and default Lucas sends zero API requests. No external API called.",
+  "real_model_calls": 0,
+  "physical_glasses_tested": false,
+  "old_terminal_repo_status": "clean rechecked 2026-10-29; retained independently",
+  "video": {
+    "path": "ar/demo/ARHoldem-demo.mp4",
+    "status": "recorded_and_reviewed",
+    "seconds": 122.0,
+    "bytes": 4775935,
+    "sha256": "3ca77548d43bc718c8e09869941773033a20861e9fafba81c0d32154b37ef1ac",
+    "codec": "H.264",
+    "resolution": [
+      1920,
+      1280
+    ],
+    "fps": 30,
+    "audio": "silent with English captions",
+    "gameplay": "native Lens Studio SPECS desktop preview; default Lucas v16; actual mouse input; complete hand through river settlement and next hand",
+    "editing": "1x gameplay; idle time cut; captions and closing title added",
+    "physical_glasses": false,
+    "external_api_called": false,
+    "published": false
+  },
+  "project_saved": true,
+  "native_warning": "LEAF plugin teardown reports destroyed instance storage warning; this is a plugin teardown warning, not a game runtime error.",
+  "source_archive_check": {
+    "archive": "ARHoldem-review-source.zip",
+    "files": 156,
+    "import_and_lucas_turn": "passed",
+    "source_loaded_from": "temporary extracted archive",
+    "dependencies": "new repository venv",
+    "uses_original_terminal_checkout": false
+  }
+}

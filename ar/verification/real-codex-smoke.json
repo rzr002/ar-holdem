@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-28T21:26:47+0800",
+  "test": "One real Codex hand; human all-in; at most two opponent decisions",
+  "provider": "CODEX / gpt-6.1-sol",
+  "mode": "codex",
+  "done": true,
+  "error": null,
+  "timed_out": false,
+  "decision_requests_started": 2,
+  "decision_count": 2,
+  "sources": [
+    "codex",
+    "codex"
+  ],
+  "last_source": "codex",
+  "elapsed_seconds": 24.98,
+  "initial_chip_total": 1500,
+  "final_chip_total": 1500,
+  "board_count": 0,
+  "settlement_net": [
+    15,
+    -5,
+    -10
+  ],
+  "outcome": [
+    "YOU 赢得 515（其余玩家弃牌）"
+  ],
+  "private_cards_recorded": false,
+  "prompts_or_credentials_recorded": false
+}
