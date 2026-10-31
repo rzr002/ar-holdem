@@ -6,6 +6,6 @@ The native Lens Studio recorder captured the SPECS desktop preview using the LEA
 
 The recorded flow shows 2.2-second opponent think intervals, individual action and card reveals, visible chip transfers, showdown, payout and settled balance. The demonstrated hand preserved chips and blocked duplicate input. Bounded media review confirmed a readable settlement and closing card; wall-crop samples showed no integer-pixel motion at half resolution and 2 Hz. This sampling does not rule out subpixel motion or movement between samples.
 
-The public repository is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); anonymous access to the uploaded contents is still being checked. The video has not been uploaded to YouTube. The raw recording and private evidence are under `ar/submission-build/` and are excluded from public submission materials.
+The public repository is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); an anonymous clone was verified on 2026-10-31 at commit `7660c754`; its Lucas bridge completed a hand through the river with all 3,000 chips conserved and no error. The video has not been uploaded to YouTube. The raw recording and private evidence are under `ar/submission-build/` and are excluded from public submission materials.
 
 The 80-second cut (`ARHoldem-demo-20261031.mp4`) and older 56-second cut (`ARHoldem-demo.mp4`) are superseded. Their timelines and metadata are historical and do not describe the current recording.

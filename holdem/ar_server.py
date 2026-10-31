@@ -75,7 +75,10 @@ def make_server(table, port=8765):
                 length = int(self.headers.get('Content-Length', '0'))
                 if not 0 < length <= 4096:
                     raise ValueError('JSON body must be 1–4096 bytes')
-                data = json.loads(self.rfile.read(length))
+                try:
+                    data = json.loads(self.rfile.read(length))
+                except RecursionError:
+                    raise ValueError('JSON nesting is too deep') from None
                 if not isinstance(data, dict):
                     raise ValueError('JSON object required')
                 if data.get('session') != table.session:

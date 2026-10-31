@@ -9,13 +9,14 @@ cd ar-holdem
 
 ## 1. Prepare Python
 
-Use Python 3.11 or later. From the repository root:
+Use Python 3.11 or 3.13. Python 3.13 needs a C compiler to build pinned `eval7`; on macOS, install Xcode Command Line Tools. Python 3.11 can use the available wheel. From the repository root:
 
 ```bash
 python3 --version
 python3 -m venv .venv
 .venv/bin/python -m pip install --upgrade pip
-.venv/bin/python -m pip install -r requirements-lucas.txt
+.venv/bin/python -m pip install -r requirements-lucas-build.txt
+.venv/bin/python -m pip install --no-build-isolation -r requirements-lucas.txt
 ```
 
 The pinned `eval7` dependency is needed by the default Lucas v16 opponent. The launcher automatically prefers `.venv/bin/python`. To use another Python, set `AR_HOLDEM_PYTHON` to that interpreter; Lucas mode still needs the `eval7` package installed in it.

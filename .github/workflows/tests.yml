@@ -18,8 +18,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install pinned native-extension build dependencies
+        run: python -m pip install -r requirements-lucas-build.txt
       - name: Install project dependencies
-        run: python -m pip install -r requirements-lucas.txt
+        run: python -m pip install --no-build-isolation -r requirements-lucas.txt
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
   presentation:

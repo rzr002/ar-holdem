@@ -1,0 +1,6 @@
+# eval7 0.1.10 imports Cython from setup.py but does not declare it as a build
+# dependency. Install these into the active environment, then build without
+# isolation so the undeclared import is available.
+Cython==3.0.12
+setuptools==75.8.0
+wheel==0.45.1

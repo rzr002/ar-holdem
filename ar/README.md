@@ -6,7 +6,16 @@ For a clean checkout, setup and provider options, see [RUNNING.md](lens-studio/A
 
 ## Start the bridge
 
-Python 3.11+ is required. The launcher prefers this checkout's `.venv` and runs the default Lucas opponent:
+Use Python 3.11 or 3.13. Prepare `.venv` and the pinned Lucas dependency from the repository root (Python 3.13 requires a C compiler; macOS users can install Xcode Command Line Tools; Python 3.11 can use the available wheel):
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -r requirements-lucas-build.txt
+.venv/bin/python -m pip install --no-build-isolation -r requirements-lucas.txt
+```
+
+The launcher prefers this checkout's `.venv` and runs the default Lucas opponent:
 
 ```bash
 ./ar/run.sh
@@ -79,11 +88,11 @@ Snapshots include `table_size: 6`, six permanent seat records, public chip total
 
 ## Tests and current demo
 
-On the current local revision, 147 Python tests passed in 16.939 seconds and the Node presentation test passed. This is backend/client test evidence, not a fresh native Lens Studio or headset check.
+On the current local revision, 147 Python tests passed in 16.939 seconds and the Node presentation test passed. A separate anonymous-clone smoke also completed a Lucas hand through the river with all 3,000 chips conserved and no error. This is backend/client evidence, not a fresh native Lens Studio or headset check. See the workflow badge in the root README for current CI status.
 
 Run backend checks with `python3 -m unittest discover -s tests`. Test counts and native preview results should be reported for the exact revision being released. Historical verification records in `verification/` describe their dated revisions and are not current-release claims.
 
-The current demo is [a 58-second recording](demo/ARHoldem-demo-paced-20261031.mp4) from the SPECS desktop preview. It uses the native LEAF `DefaultLeafInteractor` and UIKit buttons, against the default local Lucas opponent. YOU holds `6h Ah`; the board is `3h 6c Ac 3s 8s`; YOU wins with two pair and ends at 536 chips (`NET +36`). It is not physical hand-tracking evidence and contains no external model API call. See [demo notes](demo/README.md) and the [video script](lens-studio/ARHoldem/devpost/VIDEO_SCRIPT.md). The video has not been uploaded. The public repository URL is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); confirm anonymous access to its latest contents before relying on it.
+The current demo is [a 58-second recording](demo/ARHoldem-demo-paced-20261031.mp4) from the SPECS desktop preview. It uses the native LEAF `DefaultLeafInteractor` and UIKit buttons, against the default local Lucas opponent. YOU holds `6h Ah`; the board is `3h 6c Ac 3s 8s`; YOU wins with two pair and ends at 536 chips (`NET +36`). It is not physical hand-tracking evidence and contains no external model API call. See [demo notes](demo/README.md) and the [video script](lens-studio/ARHoldem/devpost/VIDEO_SCRIPT.md). The video has not been uploaded. The public repository URL is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); anonymous clone verified on 2026-10-31 at commit `7660c754`. The cloned Lucas bridge completed a hand through the river, conserved all 3,000 chips, and reported no errors.
 
 ## Existing code and new work
 
