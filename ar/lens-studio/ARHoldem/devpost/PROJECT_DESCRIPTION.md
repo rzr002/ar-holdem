@@ -8,11 +8,11 @@ The Lens connects to a local Python bridge that uses the Hold’em rules engine 
 
 ### Demonstration
 
-The current 58-second silent video was recorded in Lens Studio's SPECS desktop preview with the native LEAF `DefaultLeafInteractor` and UIKit buttons. It shows one complete hand at 1× gameplay speed; only leading and trailing idle time was trimmed. YOU holds `6h Ah`; the board is `3h 6c Ac 3s 8s`, and ORION holds `2s 2h`. YOU wins with two pair, aces and sixes, and finishes with 536 chips (`NET +36`). This demonstrates the desktop simulation, not physical SPECS hardware or physical hand tracking. See [`VIDEO_SCRIPT.md`](VIDEO_SCRIPT.md) for the recording timeline and [`ar/demo/README.md`](../../../demo/README.md) for media details.
+The current 58-second silent video was recorded in Lens Studio's SPECS desktop preview with the native LEAF `DefaultLeafInteractor` and UIKit buttons. It shows one complete hand at 1× gameplay speed; only leading and trailing idle time was trimmed. YOU holds `6h Ah`; the board is `3h 6c Ac 3s 8s`, and ORION holds `2s 2h`. YOU wins with two pair, aces and sixes, and finishes with 536 chips (`NET +36`). This demonstrates the desktop simulation, not physical SPECS hardware or physical hand tracking. Watch the [public YouTube demo](https://youtu.be/cYsJk9cjR1o). See [`VIDEO_SCRIPT.md`](VIDEO_SCRIPT.md) for the recording timeline and [`ar/demo/README.md`](../../../demo/README.md) for media details.
 
 ### Build and play
 
-Install Python 3.11+, install `requirements-lucas.txt`, run `./ar/run.sh`, then open `SpecsBaseTemplate.esproj` in Lens Studio and start the SPECS Interactive Preview. The preview and bridge run on the same computer. See [`RUNNING.md`](RUNNING.md) for a fresh-checkout walkthrough and optional provider setup.
+Install Python 3.11 or 3.13, install the Lucas build prerequisites and pinned runtime dependencies, run `./ar/run.sh`, then open `SpecsBaseTemplate.esproj` in Lens Studio and start the SPECS Interactive Preview. The preview and bridge run on the same computer. See [`RUNNING.md`](RUNNING.md) for a fresh-checkout walkthrough and optional provider setup.
 
 ### Reuse and attribution
 

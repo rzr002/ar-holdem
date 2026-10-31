@@ -17,4 +17,4 @@ The full output is 1920×1280 at 30 fps. The raw gameplay interval is 73.5–123
 
 ## Publication status
 
-The local file has not been uploaded to YouTube. The public repository is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); an anonymous clone was verified on 2026-10-31 at commit `7660c754`; its Lucas bridge completed a hand through the river with all 3,000 chips conserved and no error. No Devpost submission has been made. The 80-second and 56-second edits are superseded by this recording.
+The video is public on [YouTube](https://youtu.be/cYsJk9cjR1o), titled “AR Hold’em — Six-Seat Poker at a SPECS Table | Lens Studio Preview.” The public repository is [github.com/rzr002/ar-holdem](https://github.com/rzr002/ar-holdem); an anonymous clone was verified on 2026-10-31 at commit `7660c754`; its Lucas bridge completed a hand through the river with all 3,000 chips conserved and no error. No Devpost project entry has been submitted. The 80-second and 56-second edits are superseded by this recording.

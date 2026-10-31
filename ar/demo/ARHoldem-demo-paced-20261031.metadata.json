@@ -206,7 +206,16 @@
       "limits": "Encoded PTS continuity does not prove no duplicated captures."
     }
   },
-  "uploaded": false,
+  "uploaded": true,
+  "youtube": {
+    "url": "https://youtu.be/cYsJk9cjR1o",
+    "title": "AR Hold’em — Six-Seat Poker at a SPECS Table | Lens Studio Preview",
+    "channel": "@snowleo-z3t",
+    "channelId": "UC98OF-t6EWOHHbuJ0PwMq_Q",
+    "visibility": "public",
+    "publishedDate": "2026-10-31",
+    "verifiedInUI": true
+  },
   "physicalGlassesTested": false,
   "externalLLMUsed": false
 }
